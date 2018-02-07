@@ -2,18 +2,25 @@
 
 <body class="light-blue">
 
-<div class="container">
+  <div class="container">
 
-        <div class="row">
-            <!-- uvek isto -->
-            <div class="col-lg-4  text-white">
+    <div class="row">
 
-              <p>
-              <app-aside></app-aside>
-              </p>
+      <!-- uvek isto -->
+      <div class="col-lg-4  text-white">
+          <app-aside></app-aside>
+      </div>
 
-            </div>
-            </div>
-            </div>
+      <!--menja se -->
+      <div class="col-lg-8">
+
+        <article class="">
+
+          <router-outlet></router-outlet>
+
+        </article>
+      </div>
+    </div>
+  </div>
 
 </body>
