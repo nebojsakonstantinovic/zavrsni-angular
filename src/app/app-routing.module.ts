@@ -12,6 +12,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 
 
  const routes: Routes = [
+  { path: '', redirectTo: 'main-page', pathMatch: 'full' },
   { path: 'main-page', component: MainPageComponent },
   { path: 'cover-letter', component: CoverLetterComponent },
   { path: 'single', component: SingleComponent},
