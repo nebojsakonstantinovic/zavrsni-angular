@@ -25,24 +25,24 @@ $(document).ready(function () {
         });
     }
 
-    
+
 
 
     // navigacija
-    
+
     $('.toggle-menu').click(function(){
        $('.menu-overlay').fadeIn();
        $('.menu').css('left','0');
        $('body').addClass('inactive');
     });
-    
+
     $('.menu-overlay, .fa-close').click(function(){
         $('.menu-overlay').fadeOut();
         $('.menu').css('left','-110%');
         $('body').removeClass('inactive');
     });
-    
-    
+
+
     //animacije
 
     function animation() {
@@ -62,8 +62,8 @@ $(document).ready(function () {
     $(window).scroll(function () {
         animation();
     });
-    
-    
+
+
 });
 
 
@@ -208,9 +208,3 @@ $(document).ready(function () {
     }
 
     minigrid({container: '.masonery', item: '.masonery > *', gutter: 0});
-    
-
-    
-    
-    
-    
