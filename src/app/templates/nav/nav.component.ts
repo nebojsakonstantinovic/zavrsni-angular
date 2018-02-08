@@ -26,6 +26,7 @@ export class NavComponent implements OnInit {
     });
 
     function close() {
+      alert('test');
       $('.menu-overlay').fadeOut();
       $('.menu').css('left', '-110%');
       $('body').removeClass('inactive');
@@ -33,7 +34,7 @@ export class NavComponent implements OnInit {
       $(this).addClass('actv');
     }
 
-      $('.menu li').click(function() {
+    $('.menu li').click(function() {
       $('.menu-overlay').fadeOut();
       $('.menu').css('left', '-110%');
       $('body').removeClass('inactive');

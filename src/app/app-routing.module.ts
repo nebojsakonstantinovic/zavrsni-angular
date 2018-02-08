@@ -12,13 +12,14 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 
 
  const routes: Routes = [
-  { path: '', redirectTo: 'main-page', pathMatch: 'full' },
+
   { path: 'main-page', component: MainPageComponent },
   { path: 'cover-letter', component: CoverLetterComponent },
   { path: 'single', component: SingleComponent},
   { path: 'portfolio', component: PortfolioComponent},
   { path: 'contact', component: ContactComponent},
-  { path: 'projects', component: ProjectsComponent}
+  { path: 'projects', component: ProjectsComponent},
+  { path: '**', redirectTo: 'main-page', pathMatch: 'full' }
  ];
 
 @NgModule({
