@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 
+
 import { AppComponent } from './app.component';
 import { AsideComponent } from './templates/aside/aside.component';
 import { AppRoutingModule } from './/app-routing.module';
@@ -25,6 +26,8 @@ import { Section9Component } from './templates/section9/section9.component';
 import { Section10Component } from './templates/section10/section10.component';
 import { Section12Component } from './templates/section12/section12.component';
 import { ProjectComponent } from './templates/project/project.component';
+
+import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -54,7 +57,10 @@ import { ProjectComponent } from './templates/project/project.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCy2SusA4wzNLjcKAfnQlEXP-YjsIreHW8'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

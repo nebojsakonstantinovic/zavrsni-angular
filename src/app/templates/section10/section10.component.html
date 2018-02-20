@@ -2,8 +2,12 @@
 
 
 <section class="section-10 gray mb-5 mt-4 box-shadow">
-  <!-- name form -->
+  <!-- google map -->
 
-  <div id="googleMap" style="width:100%;height:400px;"></div>
+  <div id="googleMap" style="width:100%;height:400px;">
+     <agm-map [latitude]="lat" [longitude]="lng">
+       <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+     </agm-map>
+  </div>
 
 </section>
